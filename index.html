@@ -1,0 +1,122 @@
+<!doctype html>
+<!--
+Author: Daniel Townsend
+-->
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+		integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+
+	<link rel="stylesheet" href="style.css">
+
+	<title>Home</title>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-sm navbar-dark">
+		<a class="navbar-brand" href="index.html">Dan's Weather</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div id="navbarSupportedContent" class="collapse navbar-collapse">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link active" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="weather.html">Weather</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row mt-5">
+			<div class="col-md-8">
+				<div class="row">
+					<div class="col">
+						<div class="display-3 text-white mb-4">Overview</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<p class="text-white">This site was created by Daniel Townsend, a computer science major at
+							Miami University. This home page describes the project and how it was built, and the weather
+							page provides users the ability to search for a location and recieve a five day weather
+							forecast. The project is made up of two web pages:
+						</p>
+
+						<ul class="text-white">
+							<li><a href="index.html" class="text-white">Home page</a></li>
+							<li><a href="weather.html" class="text-white">Weather page</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 text-center">
+				<img src="ProfileSquare.jpg" id="profileImg" class="img-fluid" width="70%" height="70%"
+					alt="Profile picture of developer">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md">
+				<div class="display-3 text-white">About <i>the system</i></div>
+			</div>
+		</div>
+		<div class="row mb-4">
+			<div class="card-group mt-4">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="card weather-card mb-3" style="height: 230px;">
+							<div class="card-header text-center">Home page</div>
+							<div class="card-body">
+								<p class="card-text" id="weather-text">The home page (current page) is a simple HTML
+									page made with CSS and Bootstrap. This page simply describes
+									the project, it's components and the developer. Bootstrap was used to align the
+									text, image and the cards as well
+									as giving the page responsiveness as you shrink or enlarge the page.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="card weather-card mb-3" style="height: 230px;">
+							<div class="card-header text-center">Weather page</div>
+							<div class="card-body">
+								<p class="card-text" id="weather-text">The weather page uses HTML, CSS, Bootstrap, JS,
+									AJAX, and JQuery to style and format the page as well as
+									allowing for API calls to be made and processed. Users can enter keywords to search
+									for via the text box
+									and the javascript logic will begin the process of calling APIs. First, the TomTom
+									API is called to fetch
+									location data which is then fed into the OpenWeatherMap API to retrieve forecast
+									data for the specified location.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

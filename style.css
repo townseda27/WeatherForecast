@@ -1,0 +1,51 @@
+/*
+Author: Daniel Townsend
+*/
+
+body {
+	margin: 0px;
+	background-color: #6f38c5
+}
+
+nav {
+	background-color: indigo;
+	padding: 10px;
+}
+
+#dayDiv {
+	color: white;
+}
+
+#summary {
+	background-color: #9d76e5;
+}
+
+#summaryCol {
+	display: none;
+}
+
+.card-group .card {
+	border-style: none;
+}
+
+.cardContainer {
+	display: none;
+}
+
+.card-group .card-header {
+	background-color: #A460ED;
+	color: white;
+}
+
+.card-group .card-body {
+	background-color: #87a2fb;
+	color: white;
+}
+
+#profileImg {
+	border-radius: 50%;
+	border-style: solid;
+	border-color: white;
+	border-width: 10px;
+}
+
